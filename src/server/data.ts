@@ -43,7 +43,7 @@ export class ExampleStore {
         return product;
     }
 
-    createOrder(order: Order): number {
+    createOrder(order: Order): number { 
         const id = this.orders.length + 1;
         this.orders.push({ id, ...order });
         return id;

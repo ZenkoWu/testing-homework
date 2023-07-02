@@ -7,7 +7,6 @@ import { CartBadge } from './CartBadge';
 import { Image } from './Image';
 
 const bem = cn('ProductDetails');
-
 export interface ProductDetailsProps {
     product: Product;
 }

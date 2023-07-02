@@ -15,7 +15,8 @@ module.exports = {
   },
   plugins: {
     "html-reporter/hermione": {
-      enabled: true,
+      // enabled: true,
+      path:'hermione-html-report'
     },
   },
 };

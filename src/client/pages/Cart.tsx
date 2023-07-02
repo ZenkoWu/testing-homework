@@ -14,7 +14,7 @@ export const Cart: React.FC = () => {
     const dispatch = useDispatch();
     const cart = useSelector((s: ApplicationState) => s.cart);
     const latestOrderId = useSelector((s: ApplicationState) => s.latestOrderId);
-
+ 
     const onClear = useCallback(() => {
         dispatch(clearCart());
     }, [dispatch]);
@@ -76,7 +76,7 @@ export const Cart: React.FC = () => {
     const actions = cartIsEmpty ? null : (
         <div className="row mb-4">
             <div className="col-6">
-                <button className={bem('Clear', ['btn', 'btn-outline-secondary'])} onClick={onClear}>Clear shopping cart</button>
+                <button data-testid='delete-order' className={bem('Clear', ['btn', 'btn-outline-secondary'])} onClick={onClear}>Clear shopping cart</button>
             </div>
         </div>
     );

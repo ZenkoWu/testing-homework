@@ -13,7 +13,7 @@ export const Catalog: React.FC = () => {
     const products = useSelector((s: ApplicationState) => s.products);
 
     useEffect(() => {
-        dispatch(productsLoad())
+        dispatch(productsLoad()) 
     }, []);
 
     const items: React.ReactNode = products ?
